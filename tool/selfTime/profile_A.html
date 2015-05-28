@@ -7,7 +7,10 @@
     <script type="text/javascript" src="selfTime_A.js" charset="UTF-8"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        var tStart = Date.now();
         startTest(100000);
+        var tEnd = Date.now();
+        console.log('Total time: ' + (tEnd - tStart));
       }, false);
     </script>
   </head>
