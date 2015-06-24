@@ -7,13 +7,20 @@
     <script type="text/javascript" src="selfTime_B.js" charset="UTF-8"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        var tStart = Date.now();
-        startTest(100000);
-        var tEnd = Date.now();
-        console.log('Total time: ' + (tEnd - tStart));
+
+        document.getElementById('start_btn').addEventListener('click', function(){
+          var tStart = Date.now();
+          startTest(100000);
+          var tEnd = Date.now();
+          document.getElementById('status_span').innerText = 'Finished';
+          console.log('Total time: ' + (tEnd - tStart));
+
+        });
+
       }, false);
     </script>
   </head>
   <body>
+    <button id="start_btn">Test</button><span id="status_span"></span>
   </body>
 </html>
