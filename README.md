@@ -29,7 +29,9 @@ You can generate the output of Crankshaft's Hydrogen IR (HIR) and visualize it i
 $ d8 --trace_hydrogen --trace_phase=Z mytest.js
 ```
 Thus, a CFG(control flow graph) file ```hydrogen.cfg``` will be generated. (Of course, your JS code should at least be 'hot' enough to be processed by Crankshaft, instead of full-codegen only)
+
 Then after executing the c1visualizer program and seeing the GUI, you can open that file by "[File] > [Open Compiled Methods...]".
+
 Select any loaded method's "Z_Code generation", right click on it and choose "Open Control Flow Graph", then the graph will be visualized at right side. Further click any node in the graph and its corresponding HIR code and LIR code will be shown at bottom.
 More information and easier to read than assembly code!
 
