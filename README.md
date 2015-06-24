@@ -33,7 +33,7 @@ Then after executing the c1visualizer program and seeing the GUI, you can open t
 Select any loaded method's "Z_Code generation", right click on it and choose "Open Control Flow Graph", then the graph will be visualized at right side. Further click any node in the graph and its corresponding HIR code and LIR code will be shown at bottom.
 More information and easier to read than assembly code!
 
-### Puzzles
+## Puzzles
 
 For each puzzle, several Javascript files and their corresponding CFG files are provided for comparison.
 
